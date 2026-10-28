@@ -14,7 +14,6 @@ const allowedOrigins = (process.env.CLIENT_ORIGIN || "http://localhost:3000")
 
 app.use(cors({
   origin(origin, callback) {
-    // Permit tools such as curl/Postman (which may not send an Origin header).
     if (!origin || allowedOrigins.includes(origin)) return callback(null, true);
     return callback(new Error("Origin is not allowed by CORS"));
   }

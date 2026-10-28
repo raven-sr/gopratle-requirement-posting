@@ -413,7 +413,7 @@ export default function HomePage() {
                             <p className="mb-0 mt-2"><strong>Additional instructions:</strong> {details.additionalNotes || "None"}</p>
                           </div>
                         </div>
-                        <div className="alert alert-info mt-3 mb-0 small">Submitting will send this data to the Express API and save it in MongoDB.</div>
+                        <div className="alert alert-info mt-3 mb-0 small">Your requirements has been recorded.</div>
                       </>
                     )}
 
@@ -432,7 +432,11 @@ export default function HomePage() {
                 )}
               </div>
             </div>
-            <p className="text-center small text-secondary mt-4">Built as a full-stack demonstration · GoPratle assignment</p>
+           
+<p className="text-center small text-secondary mt-4">
+  © {new Date().getFullYear()} Siva Sundaram. All Rights Reserved.
+</p>
+
           </div>
         </div>
       </section>
